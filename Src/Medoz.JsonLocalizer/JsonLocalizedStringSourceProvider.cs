@@ -68,7 +68,9 @@ namespace Medoz.JsonLocalizer
         private Dictionary<string, IDictionary<string, string>> readJsonFile(string basePath)
         {
             var resource = new Dictionary<string, IDictionary<string, string>>();
-            foreach(var fileName in Directory.GetFiles(basePath + "*" + extend))
+            var floderPath = Path.GetDirectoryName(basePath + extend);
+            var fn = Path.GetFileNameWithoutExtension(basePath + extend);
+            foreach(var fileName in Directory.GetFiles(floderPath, fn + "*" + extend))
             {
                 var f = Path.GetFileName(basePath);
                 var source = Path.GetFileNameWithoutExtension(fileName).Replace(f, "");
