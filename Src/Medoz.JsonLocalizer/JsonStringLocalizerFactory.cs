@@ -36,7 +36,7 @@ namespace Medoz.JsonLocalizer
         private JsonStringLocalizer CreateJsonStringLocalizer(Type resourceSource)
         {
             var assemblyName = new AssemblyName(resourceSource.GetTypeInfo().Assembly.FullName ?? string.Empty);
-            return CreateJsonStringLocalizer(nameof(resourceSource), assemblyName.Name);
+            return CreateJsonStringLocalizer(resourceSource.Name, assemblyName.Name);
         }
 
         private JsonStringLocalizer CreateJsonStringLocalizer(string baseName, string location)
