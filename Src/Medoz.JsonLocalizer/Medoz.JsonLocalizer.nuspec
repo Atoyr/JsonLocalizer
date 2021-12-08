@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
+    <id>Medoz.JsonLocalizer</id>
+    <version>0.1.0</version>
+    <title>Medoz.JsonLocalizer</title>
+    <authors>r.uchiyama</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
-    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
-    <description>$description$</description>
+    <projectUrl>https://github.com/atoyr/Medoz.JsonLocalizer</projectUrl>
+    <iconUrl>https://github.com/atoyr/Medoz.JsonLocalizer</iconUrl>
+    <description>ASP.NET Core Localization from Json file.</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>$copyright$</copyright>
-    <tags>Tag1 Tag2</tags>
+    <copyright>Copyright 2021</copyright>
+    <tags>json localization</tags>
   </metadata>
 </package>
