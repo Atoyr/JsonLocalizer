@@ -31,6 +31,7 @@ namespace Medoz.JsonLocalizer
 
         public string GetString(string name, CultureInfo cultureInfo)
         {
+            if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException(null, nameof(name));
             IDictionary<string, string> cultureResource;
             if (_resource.Any(x => x.Key == cultureInfo.Name))
             {
@@ -49,7 +50,7 @@ namespace Medoz.JsonLocalizer
             {
                 return cultureResource.FirstOrDefault(x => x.Key == name).Value;
             }
-            return string.Empty;
+            return name;
         }
     }
 }
